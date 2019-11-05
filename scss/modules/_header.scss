@@ -1,0 +1,69 @@
+.header {
+    position: relative;
+    background: url(/images/header-bg.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 1366px;
+    height: 740px;
+    left: 0px;
+    top: 0px;
+    font: 18px $mont;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 112px;
+    }
+}
+
+.navigation {
+    position: absolute;
+    top: 22px;
+    right: 113px;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+
+    &__link {
+        text-decoration: none;
+        transition: all .3s;
+        ;
+    }
+
+    &__link:hover {
+        transform: scale(1.1);
+    }
+
+    &__item {
+        text-transform: uppercase;
+        margin: 0 25px;
+        color: var(--blue);
+        font-weight: 700;
+    }
+}
+
+.title {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    
+
+    h1 {
+        font: 48px $mont;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+    }
+
+
+}
