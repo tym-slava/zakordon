@@ -12,15 +12,17 @@
     }
 
     &__text {
-        max-width: 640px;
+        max-width: 650px;
         width: 100%;
         padding: 20px;
         background: var(--white);
         margin-top: 60px;
         margin-left: -100px;
         line-height: 27px;
+    }
 
-        
+    p {
+        margin-bottom: 10px;
     }
 }
 
@@ -30,7 +32,38 @@
     margin-top: -20px;
     width: 184px;
     height: 184px;
-    border-top: 5px solid var(--blue);
-    border-right: 5px solid var(--blue);
+    border-top: 5px solid var(--red);
+    border-right: 5px solid var(--red);
+}
+
+.desk {
+    background: url(/images/about-bg.jpg) no-repeat bottom;
+    background-size: cover;
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    &__box {
+        width: 310px;
+        height: 215px;
+        background: var(--white);
+        border-radius: 5px;
+        margin: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        
+        p {
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 10px;
+            line-height: 24px;
+        }
+    }
+
 }
 
