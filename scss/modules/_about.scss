@@ -1,0 +1,36 @@
+.main-box {
+    display: flex;
+}
+
+
+.about {
+    font-family: $mont;
+    
+    &__pic {
+        max-width: 610px;
+        width: 100%;
+    }
+
+    &__text {
+        max-width: 640px;
+        width: 100%;
+        padding: 20px;
+        background: var(--white);
+        margin-top: 60px;
+        margin-left: -100px;
+        line-height: 27px;
+
+        
+    }
+}
+
+.box-line {
+    position: absolute;
+    right: 100px;
+    margin-top: -20px;
+    width: 184px;
+    height: 184px;
+    border-top: 5px solid var(--blue);
+    border-right: 5px solid var(--blue);
+}
+

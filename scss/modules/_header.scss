@@ -4,6 +4,18 @@
     background-size: cover;
     font-family: $mont;
     height: 100vh;
+
+    @media (max-width: 992px) {
+        background-size: 960px;
+    }
+
+    @media (max-width: $mobile) {
+        background-size: 720px;
+    }
+
+    @media (max-width: 576px) {
+        background-size: 540px;
+    }
 }
 
 
@@ -41,8 +53,6 @@
     @media (max-width: $desktop) {
         display: none;
     }
-
-    &__menu {}
     
 }
 
@@ -83,6 +93,7 @@
 
     &__item:hover {
         transform: scale(1.1);
+        color: var(--red);
     }
 
     a {
