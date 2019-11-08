@@ -1,69 +1,105 @@
 .header {
-    position: relative;
-    background: url(/images/header-bg.jpg);
-    background-size: cover;
-    position: absolute;
-    width: 1366px;
-    height: 740px;
-    left: 0px;
-    top: 0px;
-    font: 18px $mont;
 
+    background: url(/images/header-bg.jpg) no-repeat center;
+    background-size: cover;
+    font-family: $mont;
+    height: 100vh;
 }
 
-.menu {
+
+.row {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-    &__logo {
-        position: absolute;
-        top: 0;
-        left: 112px;
-    }
+    margin-bottom: 20px;
 }
 
-.navigation {
-    position: absolute;
-    top: 22px;
-    right: 113px;
+.logo {
+    @media (max-width: $mobile) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    padding-left: 100px;
+    transition: all .3s;
+
+
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
 }
 
 .nav {
+    padding-left: 100px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 
-    &__link {
-        text-decoration: none;
-        transition: all .3s;
-        ;
+    @media (max-width: $desktop) {
+        display: none;
     }
 
-    &__link:hover {
+    &__menu {}
+    
+}
+
+.icon {
+    fill: blue;
+    width: 50px;
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+
+    // @media (max-width: $mobile) {
+    //     display: ;
+    // }
+}
+
+.menu {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+
+
+    &__item {
+        color: var(--blue);
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-left: 30px;
+        transition: all .3s;
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &__item:hover {
         transform: scale(1.1);
     }
 
-    &__item {
-        text-transform: uppercase;
-        margin: 0 25px;
-        color: var(--blue);
-        font-weight: 700;
+    a {
+        text-decoration: none;
     }
 }
 
 .title {
-    position: absolute;
-    top: 65%;
-    left: 15%;
-    
+    display: flex;
+    align-items: center;
 
-    h1 {
-        font: 48px $mont;
+    &__text {
+        margin: 0 auto;
+        padding-top: 350px;
+        color: var(--white);
+        font-size: 48px;
         font-weight: 700;
-        color: white;
-        text-transform: uppercase;
+
     }
-
-
 }

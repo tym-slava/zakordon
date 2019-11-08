@@ -1,6 +1,9 @@
 // ROOTS
 :root {
-    --blue: #28288B;
+    --blue: #000091;
+    --red: #C60220;
+    --black: #111111;
+    --white: #ffffff;
 }
 
 
@@ -9,4 +12,7 @@ $mont: 'Montserrat', sans-serif;
 
 
 
-// COLORS
+// MOBILE / TABLETS / Desktop
+$m-portrait: 480px;
+$mobile: 767px;
+$desktop: 1200px;
