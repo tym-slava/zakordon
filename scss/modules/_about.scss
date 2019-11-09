@@ -4,7 +4,6 @@
 
 
 .about {
-    font-family: $mont;
     
     &__pic {
         max-width: 610px;
@@ -56,12 +55,23 @@
         font-weight: 700;
         display: flex;
         align-items: center;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 4px 4px 26px rgba(1, 13, 36, 0.25);
+            opacity: 0.6;
+        }
         
         p {
             text-align: center;
             margin: 0 auto;
             padding: 0 10px;
             line-height: 24px;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
