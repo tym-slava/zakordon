@@ -11,13 +11,10 @@
     }
 
     &__text {
+        @include text;
         max-width: 650px;
-        width: 100%;
-        padding: 20px;
-        background: var(--white);
-        margin-top: 60px;
         margin-left: -100px;
-        line-height: 27px;
+
     }
 
     p {
@@ -25,14 +22,17 @@
     }
 }
 
-.box-line {
-    position: absolute;
-    right: 100px;
-    margin-top: -20px;
-    width: 184px;
-    height: 184px;
-    border-top: 5px solid var(--red);
-    border-right: 5px solid var(--red);
+.text-about {
+    position: relative;
+    
+    &__box-line {
+        @include linebox;
+        right: 0;
+        margin-top: -20px;
+        border-color: var(--red);
+        border-left: none;
+        border-bottom: none;
+    }
 }
 
 .desk {
@@ -59,7 +59,7 @@
 
         &:hover {
             box-shadow: 4px 4px 26px rgba(1, 13, 36, 0.25);
-            opacity: 0.6;
+            opacity: 0.7;
         }
         
         p {
@@ -70,7 +70,7 @@
             transition: all .3s;
 
             &:hover {
-                transform: scale(1.1);
+                color: var(--red);
             }
         }
     }

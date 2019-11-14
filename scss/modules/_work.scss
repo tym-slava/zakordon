@@ -1,0 +1,176 @@
+// WORK
+.work {
+
+    &__text {
+        @include text;
+        max-width: 653px;
+        margin-right: -100px;
+        z-index: 1;
+        margin-bottom: 100px;
+    }
+
+    &__pic {
+        max-width: 576px;
+        width: 100%;
+    }
+
+}
+
+.main-box {
+    display: flex;
+}
+
+
+
+.text-work {
+    position: relative;
+
+    &__box-line {
+        @include linebox;
+        border-color: var(--blue);
+        border-top: none;
+        border-right: none;
+        left: 0;
+        bottom: 0px;
+    }
+}
+
+.list {
+
+    &__item {
+        display: flex;
+        margin: 12px auto;
+
+        p {
+            margin-left: 15px;
+        }
+    }
+}
+
+.icon-check {
+    width: 20px;
+    height: 20px;
+    fill: var(--blue);
+}
+
+//Block with explains about jobs
+
+.explain-job {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+    &__box-line1 {
+        @include linebox;
+        right: 20px;
+        bottom: 20px;
+        border-top: none;
+        border-left: none;
+        border-color: var(--red);
+    }
+
+    &__box-line2 {
+        @include linebox;
+        top: 20px;
+        left: 0;
+        border-right: none;
+        border-bottom: none;
+        border-color: var(--red);
+    }
+
+
+
+    .icon-title {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+
+    &__box {
+        padding: 5px;
+        margin: 30px 15px;
+        max-width: 340px;
+        width: 100%;
+
+        p {
+            text-align: justify;
+            line-height: 27px;
+        }
+
+
+    }
+
+    .subtitle {
+        color: var(--blue);
+    }
+}
+
+.explain-icons {
+    width: 15px;
+    height: 15px;
+    fill: var(--red);
+    margin: 25px 10px;
+}
+
+//Block with prices//
+
+
+.price {
+    background: #28288B;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+
+    
+
+
+    @mixin alignprice {
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        padding: 30px 10px;
+        line-height: 40px;
+
+    }
+
+    &__box {
+        @include alignprice;
+        // border: 1px solid yellowgreen;
+
+
+        span {
+            font-size: 48px;
+            font-weight: 900;
+        }
+
+        &--big {
+            @include alignprice;
+            
+
+
+            span {
+                font-size: 72px;
+                font-weight: 900;
+            }
+        }
+    }
+
+}
+
+//BLOCK WITH ELABORATIONS//
+
+.elaboration {
+    margin: 20px;
+    line-height: 28px;
+
+    span {
+        color: var(--red);
+    }
+}

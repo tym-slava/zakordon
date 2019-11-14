@@ -21,7 +21,7 @@
 
 <body>
 
-	<section class="header">
+	<header class="header">
 		<div class="container">
 			<div class="main">
 				<div class="row">
@@ -33,27 +33,27 @@
 						<div class="nav__menu">
 							<i class="burger-menu">
 								<!--ICON MENU-->
-								<svg class="icon">
-									<use xlink:href="images/sprite.svg#iconfinder_icon-menu_2867922"></use>
+								<svg class="icon icon-menu">
+									<use xlink:href="images/sprite.svg#menu"></use>
 								</svg>
 							</i>
 						</div>
 						<ul class="menu">
-							<a href="#about">
-								<li class="menu__item">о нас</li>
-							</a>
-							<a href="#">
-								<li class="menu__item">работа</li>
-							</a>
-							<a href="#">
-								<li class="menu__item">авиабилеты</li>
-							</a>
-							<a href="#">
-								<li class="menu__item">контакты</li>
-							</a>
-							<a href="#">
-								<li class="menu__item">отзывы</li>
-							</a>
+							<li class="menu__item">
+								<a href="#about">о нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="#work">работа</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">авиабилеты</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">контакты</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">отзывы</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</header>
 
 	<section class="about" id="about">
 		<div class="container">
@@ -73,21 +73,18 @@
 				<div class="about__pic">
 					<img src="images/pic_about.jpg" alt="about us">
 				</div>
-				<div class="about__text">
-					<div class="box-line"></div>
+				<div class="about__text text-about">
+					<div class="text-about__box-line box-line"></div>
 					<p>Центр ZAKORDON, созданный в 2007 году, специализируется на предоставлении услуг по оформлению
-						выезда
-						на стажировку и работу за границей граждан Украины.</p>
+						выезда на стажировку и работу за границей граждан Украины.</p>
 					<p>С каждым годом, впоследствии глобализации, многие страны становятся все более открытыми для
-						студентов
-						и рабочих со всего мира. Самые сильные экономики стараются привлекать молодых и талантливых
-						специалистов из других стран. И хотя, возможностей для осуществления мечты по работе или учебе
-						за
-						границей у граждан Украины стало больше, в процессе поиска работы, ее получения и дальнейшего
-						оформления документов самостоятельно, практически все сталкиваются с различными препятствиями.
-						Как
-						правило, главный барьер — это незнание или недостаточное знание языка выбранной страны, а также
-						особенностей оформления документов.</p>
+						студентов и рабочих со всего мира. Самые сильные экономики стараются привлекать молодых и
+						талантливых специалистов из других стран. И хотя, возможностей для осуществления мечты по работе
+						или учебе за границей у граждан Украины стало больше, в процессе поиска работы, ее получения и
+						дальнейшего оформления документов самостоятельно, практически все сталкиваются с различными
+						препятствиями.
+						Как правило, главный барьер — это незнание или недостаточное знание языка выбранной страны, а
+						также особенностей оформления документов.</p>
 					<p>Центр ZAKORDON поможет вам на всех этапах и сделает ваше трудоустройство, стажировку, а,
 						возможно, и
 						иммиграцию максимально простыми и гарантированными.</p>
@@ -128,9 +125,9 @@
 				<h1><span>работа</span> в норвегии</h1>
 			</div>
 			<div class="main-box">
-				<div class="work__text">
-					<div class="box-line"></div>
-					<h2 class="subtitle">норвегия</h2>
+				<div class="work__text text-work">
+					<div class="box-line text-work__box-line"></div>
+					<h2 class="subtitle">Норвегия</h2>
 					<p>Норвегия — удивительная страна на самой «макушке» нашей планеты. Сочетание красивейшей природы,
 						отменной экологии и высоких социальных стандартов — делают этот край привлекательным как для
 						туристов, так и для студентов и работников.</p>
@@ -150,7 +147,149 @@
 					<img src="images/pic-work.jpg" alt="work">
 				</div>
 			</div>
+			<h2 class="subtitle">Условия работы:</h2>
 		</div>
+		<div class="desk">
+			<div class="desk__box">
+				<p>Отрасль стажировки: Сельское хозяйство</p>
+			</div>
+			<div class="desk__box">
+				<p>Сезонная работа</p>
+			</div>
+			<div class="desk__box">
+				<p>Срок стажировки: 6 месяцев</p>
+			</div>
+
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="must">
+					<h2 class="subtitle">Требования к кандидату</h2>
+					<ul class="list">
+						<li class="list__item">
+							<svg class="icon icon-check">
+								<use xlink:href="../images/sprite.svg#check"></use>
+							</svg>
+							<p>Желателен опыт работы связанный с сельским хозяйством и растениеводством.</p>
+						</li>
+						<li class="list__item">
+							<svg class="icon icon-check">
+								<use xlink:href="../images/sprite.svg#check"></use>
+							</svg>
+							<p>Знание английского на уровне, позволяющим проходить собеседования (в том числе онлайн).
+							</p>
+						</li>
+						<li class="list__item">
+							<svg class="icon icon-check">
+								<use xlink:href="../images/sprite.svg#check"></use>
+							</svg>
+							<p>Возраст от 19 до 33 лет.</p>
+						</li>
+						<li class="list__item">
+							<svg class="icon icon-check">
+								<use xlink:href="../images/sprite.svg#check"></use>
+							</svg>
+							<p>Наличие действующего загранпаспорта.</p>
+						</li>
+						<li class="list__item">
+							<svg class="icon icon-check">
+								<use xlink:href="../images/sprite.svg#check"></use>
+							</svg>
+							<p>Мотивация, обучаемость, заинтересованность, желание работать.</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="explain-job">
+					<div class="box-line explain-job__box-line1"></div>
+					<div class="box-line explain-job__box-line2"></div>
+
+					<div class="explain-job__box ">
+						<div class="icon-title">
+							<svg class="icon explain-icons">
+								<use xlink:href="../images/sprite.svg#file-text"></use>
+							</svg>
+							<h2 class="subtitle">Обязанности</h2>
+						</div>
+						<p>Сбор и пакетирование овощей и цветов. Уход за растениями. Работа как в теплицах, так и на открытом грунте</p>
+					</div>
+					<div class="explain-job__box ">
+						<div class="icon-title">
+							<svg class="icon explain-icons">
+								<use xlink:href="../images/sprite.svg#food"></use>
+							</svg>
+							<h2 class="subtitle">Питание</h2>
+						</div>
+						<p>Самостоятельно, за собственный счет. Кухни в общежитиях полностью оборудованы и комфортны</p>
+					</div>
+					<div class="explain-job__box ">
+						<div class="icon-title">
+							<svg class="icon explain-icons">
+								<use xlink:href="../images/sprite.svg#iconfinder_100_111046"></use>
+							</svg>
+							<h2 class="subtitle">Страхование</h2>
+						</div>
+						<p>На месте стажировки действует местное  медицинское обслуживание, дополнительный полис медицинского страхования    не обязателен</p>
+					</div>
+					<div class="explain-job__box ">
+						<div class="icon-title">
+							<svg class="icon explain-icons">
+								<use xlink:href="../images/sprite.svg#iconfinder_home_126572"></use>
+							</svg>
+							<h2 class="subtitle">Проживание</h2>
+						</div>
+						<p>Практиканты проживают в двухместных комнатах в общежитии. Оплата проживания высчитывается из заработной платы и составляет около 3750 норвежских крон в месяц</p>
+					</div>
+					<div class="explain-job__box ">
+						<div class="icon-title">
+							<svg class="icon explain-icons">
+								<use xlink:href="../images/sprite.svg#iconfinder_payment-gateway_3018571"></use>
+							</svg>
+							<h2 class="subtitle">Зарплата</h2>
+						</div>
+						<p>Почасово. В среднем 126,65 норвежских крон в час. Максимально допустимое количество рабочих часов в месяц - 215. В среднем, зарплата, после вычета налогов и оплаты проживания составляет: 900-1100 евро.</p>
+					</div>
+				</div>
+				<h2 class="subtitle">Стоимость программы и сопутствующие расходы</h2>
+			</div>
+		</div>
+		<div class="price">
+			<div class="container">
+				<div class="row">
+					<div class="price__box col-3">
+						<p><span>530</span> &#8364 </p> 
+						<p>Консульский сбор*</p>
+					</div>
+					<div class="price__box col-3">
+						<p><span>55</span> &#8364 </p> 
+						<p>Визовый сбор**</p>
+					</div>
+					<div class="price__box col-3">
+						<p><span>200-300</span> &#8364</p> 
+						<p>Авиабилеты***</p>
+					</div>
+					<div class="price__box col-3">
+						<p><span>1000</span> &#8364</p> 
+						<p>Стоимость контракта****</p>
+					</div>
+					<div class="price__box--big col-12">
+						<p><span>1800</span> &#8364</p> 
+						<p>Общая стоимость всех затрат</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="elaboration">
+					<p class="elaboration__item"><span>*</span>	эмиграционная служба Новегии взимает плату за рассмотрение Вашего дела.</p>
+					<p class="elaboration__item"><span>**</span> стоимость услуг визового центра в Киеве, Харькове, Львов и т.д. </p>
+					<p class="elaboration__item"><span>***</span> стоимость билетов может варьироваться от 150 - 300 евро в зависимости от сезонности и авиакомпании.</p>
+					<p class="elaboration__item"><span>****</span> стоимость контракта, оформления всех документов, анкет, регистрации в UDI.</p>
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 

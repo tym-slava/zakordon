@@ -31,3 +31,19 @@
 		transform: translateX(-50%);
 	}
 }
+
+@mixin linebox {
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    border: 5px solid;
+}
+
+@mixin text {
+    width: 100%;
+    padding: 20px;
+    background: var(--white);
+    margin-top: 60px;
+    line-height: 27px;
+    text-align: justify;
+}
