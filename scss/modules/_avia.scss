@@ -1,0 +1,32 @@
+.text-avia {
+    position: relative;
+    line-height: 27px;
+    text-align: justify;
+    background: var(--white);
+    margin-top: -260px;
+    padding: 40px;
+
+    &__box-line {
+        @include linebox;
+        right: 0;
+        bottom: 0;
+        border-top: none;
+        border-left: none;
+        border-color: var(--red);
+    }
+}
+
+.subtitle {
+    padding-left: 75px;
+}
+
+.list {
+    &__item {
+        padding-left: 25px;
+    }
+}
+
+.some-text {
+    line-height: 27px;
+    margin-top: 40px;
+}

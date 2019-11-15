@@ -146,7 +146,7 @@
 
 
         span {
-            font-size: 48px;
+            font-size: 50px;
             font-weight: 900;
         }
 
@@ -172,5 +172,34 @@
 
     span {
         color: var(--red);
+    }
+}
+
+//---------------------------//
+.arrow {
+    fill: var(--white);
+    width: 80px;
+}
+
+.btn {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 15px 25px;
+    background: var(--red);
+    color: var(--white);
+    border: 3px solid var(--red);
+    margin: 25px 40%;
+    border-radius: 3px;
+    transition: all .3s;
+
+    &:hover {
+        background: var(--white);
+        color: var(--red);
+        border: 3px solid var(--red);
+        
+    }
+
+    &:active {
+        background: var(--blue);
     }
 }
