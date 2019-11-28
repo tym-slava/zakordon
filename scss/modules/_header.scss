@@ -97,6 +97,10 @@
 
     a {
         text-decoration: none;
+        color: var(--blue);
+        &:active {
+            color: var(--red);
+        }
     }
 }
 

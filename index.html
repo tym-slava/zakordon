@@ -49,7 +49,7 @@
 								<a href="#avia">авиабилеты</a>
 							</li>
 							<li class="menu__item">
-								<a href="#">контакты</a>
+								<a href="#contact">контакты</a>
 							</li>
 							<li class="menu__item">
 								<a href="#">отзывы</a>
@@ -313,7 +313,7 @@
 				<p>Отправить свое резюме и официальное фото на zakordon.pl@gmail.com</p>
 			</div>
 		</div>
-		<button class="btn" id="btn">Регистрация</button>
+		<form action="https://docs.google.com/forms/d/e/1FAIpQLSdS2p1bne2FNJa3vqe2BI9zV3Nz1_DBjthnRNYbsNjzoosT-g/viewform" target="_blank"><button class="btn" id="btn" > Регистрация</button></form>
 
 
 	</section>
@@ -374,36 +374,72 @@
 		</div>
 	</section>
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="title">
-					<h1><span>наши</span> контакты</h1>
+					<h1>наши <span>контакты</span></h1>
 				</div>
-				<div class="contact-box col-12">
-					<div class="contact__info contact-info">
-						<div class="box-line contact-info__box-line"></div>
-						<svg class="icon">
-							<use xlink:href="/images/sprite.svg#plicket"></use>
-						</svg>
-						<p>zakordon.pl@gmail.com</p>
 
-						<svg class="icon">
-							<use xlink:href="/images/sprite.svg#phone"></use>
-						</svg>
-						<a href="tel:+380675370206" class="contact-info__phone"> Tel. +380675370206</a>
-						<a href="tel:+380959215310" class="contact-info__phone"> Tel. +380959215310</a>
-						<a href="tel:+359884415396" class="contact-info__phone"> Tel. +359884415396</a>
-						<a title="Viber" href="viber://add?number=+359884415396">Viber</a>
-						<a title="Telegram" href="tg://resolve?domain=@Slavey">Telegram</a>
-						<a title="WhatsApp" href="whatsapp://send?phone=+359884415396">WhatsApp</a>
+				<div class="contact-box col-12">
+					<!-- блоки инфо и картинка -->
+					<div class="contact-info col-6"><!-- блоки телефонов и мейл -->
+						<div class="box-line contact-info__box-line offset-1 col"></div> <!-- универсальный блок который делает цветной уголок -->
+						<div class="wrap">
+							<div class="mail-icon">
+									<svg class="icon plicket">
+											<use xlink:href="/images/sprite.svg#plicket"></use>
+									</svg>	
+							</div>
+							<div class="phone-icon">
+									<svg class="icon phone">
+											<use xlink:href="/images/sprite.svg#phone"></use>
+									</svg>
+							</div>
+							<ul class="contact-list">
+								<li class="list__item">
+									<a href="mailto:zakordon.pl@gmail.com">zakordon.pl@gmail.com</a>
+								</li>
+								<li class="list__item">
+									<a href="tel:+380675370206">+38 067 537 02 06</a>
+								</li>
+								<li class="list__item">
+									<a href="tel:+380959215310">+38 095 921 53 10</a>
+								</li>
+								<li class="list__item">
+									<a href="tel:+359884415396">+35 988 441 53 96</a>
+								</li>
+								<li>
+									<div class="m-icons">
+										<a title="Viber" href="viber://add?number=+359884415396">
+											<svg class="icon">
+												<use xlink:href="/images/sprite.svg#Viber"></use>
+											</svg>
+										</a>
+										<a title="Telegram" href="tg://resolve?domain=@Slavey">
+											<svg class="icon">
+												<use xlink:href="/images/sprite.svg#Telegram"></use>
+											</svg>
+										</a>
+										<a title="WhatsApp" href="whatsapp://send?phone=+359884415396">
+											<svg class="icon">
+												<use xlink:href="/images/sprite.svg#Whatsapp"></use>
+											</svg>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="contact__pic">
+					<div class="contact-pic offset-4">
 						<img src="images/contacts.jpg" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+	<section class="footer">
+		<p>Мы реальная контора и реально трудоустраиваем !!! никакого рабства! епта</p>
 	</section>
 
 
