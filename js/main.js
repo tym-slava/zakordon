@@ -41,3 +41,13 @@ window.addEventListener('scroll', function () {
 		showPrice('p-all', 1100, 1800, 50, 5500);
 	}
 });
+
+//ФУНКЦИЯ КОТОРАЯ МЕНЯЕТ ГОД В ФУТЕРЕ НА ТЕКУЩИЙ
+function showYearInFooter () {
+	let newYear = new Date();
+	let p = document.querySelector('.year');
+
+	p.innerHTML = `2009-${newYear.getFullYear()} zakordon.eu`;
+}
+showYearInFooter();
+
