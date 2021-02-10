@@ -35,9 +35,9 @@ window.addEventListener('scroll', function () {
 		pageYOffset > 8870 && pageYOffset < 8970 ||
 		pageYOffset > 9500 && pageYOffset < 9550) {
 
-		showPrice('p-consul', 350, 630, 10, 4000);
-		showPrice('p-viza', 15, 55, 5, 1000);
-		showPrice('p-contract', 700, 1000, 10, 4000);
-		showPrice('p-all', 1100, 1800, 50, 5000);
+		showPrice('p-consul', 350, 630, 10, 4500);
+		showPrice('p-viza', 15, 55, 5, 3000);
+		showPrice('p-contract', 700, 1000, 10, 4500);
+		showPrice('p-all', 1100, 1800, 50, 5500);
 	}
 });

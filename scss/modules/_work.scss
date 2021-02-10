@@ -134,7 +134,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // justify-content: center;
         padding: 30px 10px;
         line-height: 40px;
 
@@ -142,7 +141,7 @@
 
     &__box {
         @include alignprice;
-        // border: 1px solid yellowgreen;
+        
 
 
         span {
@@ -185,21 +184,21 @@
     font-size: 30px;
     font-weight: 800;
     padding: 15px 25px;
-    background: var(--red);
+    background: var(--blue);
     color: var(--white);
-    border: 3px solid var(--red);
+    border: 3px solid var(--blue);
     margin: 25px 40%;
     border-radius: 3px;
     transition: all .3s;
 
     &:hover {
-        background: var(--white);
-        color: var(--red);
+        background: var(--red);
+        color: var(--white);
         border: 3px solid var(--red);
         
     }
 
     &:active {
-        background: var(--blue);
+        background: var(--green);
     }
 }
