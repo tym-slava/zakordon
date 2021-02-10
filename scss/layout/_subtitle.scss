@@ -1,0 +1,12 @@
+@mixin subtitle($color: var(--red)) {
+    color: $color;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    @include subtitle();
+}

@@ -1,0 +1,192 @@
+@mixin link {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+.contact-box {
+    // display: flex;
+    // flex-direction: column;
+    margin: 0px;
+    
+}
+
+.contact-info {
+    background: white; // цвет потом поменяем на белый
+    margin-left: -50px;
+    bottom: -150px;
+
+
+    &__box-line {
+        @include linebox;
+        bottom: 0;
+        left: 0;
+        border-top: none;
+        border-right: none;
+        border-color: var(--blue);
+
+    }
+
+    .wrap {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .plicket {
+            position: absolute;
+            left: 120px;
+            top: 53px;
+        }
+
+        .phone {
+            position: absolute;
+            left: 120px;
+            top: 120px;
+        }
+    }
+
+    .contact-list {
+        position: relative;
+        padding: 45px;
+        text-align-last: center;
+        
+
+        &__item {
+            margin: 0px auto;
+            margin-left: auto;
+            padding: 10px;
+        }
+
+        a {
+            @include link;
+            font-size: 20px;
+
+            &:hover {
+                color: var(--blue);
+            }
+        }
+    }
+
+}
+
+// ul {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     align-content: flex-end;
+
+// }
+
+
+.m-icons {
+    padding-left: 0;
+    
+
+    a {
+        margin: 0 10px;
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+    }
+}
+
+.contact-pic {
+    margin-top: -222px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .contact {
+//     display: flex;
+
+//     .icon {
+//         width: 25px;
+//         height: 25px;
+//         margin: 10px 30px;
+//     }
+// }
+
+
+
+// .contact-info {
+//     background: var(--white);
+//     display: flex;
+//     flex-direction: column;
+//     // margin: 83px;
+//     max-width: 520px;
+//     width: 100%;
+//     max-height: 200px;
+//     height: 100%;
+
+
+//    .phone {
+//        display: flex;
+//        margin: 0 30px;
+
+//        .icon {
+//            margin: auto;
+//        }
+//    }
+
+//     &__mail {
+//         display: flex;
+//         flex-direction: row;
+
+//         p {
+//             margin: 12px;
+//         }
+
+//         a {
+//             @include link;
+
+//             &:hover {
+//                 color: var(--blue);
+//             }
+//         }
+//     }
+
+//     &__numbers {
+//         display: flex;
+
+//         p {
+//             display: block;
+//             margin: 10px;
+//         }
+
+//         a {
+//             @include link;
+
+//             &:hover {
+//                 color: var(--blue);
+//             }
+//         }
+//     }
+
+//     &__box-line {
+//         @include linebox;
+//         border-color: var(--blue);
+//         border-top: none;
+//         border-right: none;
+//     }
+// }

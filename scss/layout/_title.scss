@@ -1,0 +1,17 @@
+@mixin title {
+	font-size: 48px;
+    font-weight: 700;
+    color: var(--blue);
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-left: 15px;
+    padding: 5px 0;
+
+    span {
+        color: var(--red);
+    }
+}
+
+.title {
+    @include title;
+}

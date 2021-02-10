@@ -1,0 +1,49 @@
+@mixin pos($pos: absolute, $t: false, $r: false, $b: false, $l: false, $z: false) {
+	position: $pos;
+	@if $t { top: $t; }
+	@if $r { right: $r; }
+	@if $b { bottom: $b; }
+	@if $l { left: $l; }
+	@if $z { z-index: $z; }
+}
+
+@mixin size($width, $heigth: $width) {
+	width: $width;
+	height: $heigth;
+}
+
+@mixin align($vert: true, $hor: false, $pos: relative) {
+	@if $pos {
+		position: $pos;
+	}
+	@if $vert {
+		top: 50%;
+	}
+	@if $hor {
+		left: 50%;
+	}
+
+	@if $vert and $hor {
+		transform: translateX(-50%) translateY(-50%);
+	} @else if $vert {
+		transform: translateY(-50%);
+	} @else {
+		transform: translateX(-50%);
+	}
+}
+
+@mixin linebox {
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    border: 5px solid;
+}
+
+@mixin text {
+    width: 100%;
+    padding: 20px;
+    background: var(--white);
+    margin-top: 60px;
+    line-height: 27px;
+    text-align: justify;
+}
